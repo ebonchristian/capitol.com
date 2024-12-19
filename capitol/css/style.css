@@ -68,6 +68,10 @@ body {
     color: #007BFF;
 }
 
+.registration-form p {
+    color: rgb(0, 0, 0);
+}
+
 .registration-form .login-link a:hover {
     text-decoration: underline;
 }
