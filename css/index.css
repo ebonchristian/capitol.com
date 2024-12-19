@@ -1,0 +1,126 @@
+/* General reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    position: relative; /* Needed for the logout button positioning */
+}
+
+
+header img {
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Center the content with 20% margins on both sides */
+.container {
+    margin: 0 auto;
+    width: 70%; /* 20% margin on each side */
+    max-width: 1200px; /* Optional: Set a max-width for larger screens */
+}
+
+/* Logout button styling */
+.logout-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    color: red;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.logout-btn:hover {
+    color: black;
+    background-color: red;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    margin: 20px 0;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+.search-bar {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.services {
+    margin: 30px 0;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Reduce margin for smaller screens */
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+}
